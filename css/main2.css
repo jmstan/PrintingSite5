@@ -1,0 +1,767 @@
+---
+---
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/*---------- End Reset----------*/
+
+
+/*----------Parallax Styles------*/
+/*html, body {
+    /* give this to all tags from html to .fullscreen */
+/*    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+/*.content-a {
+  display:table;
+}
+.content-b {
+  display:table-cell;
+    position:relative;
+  vertical-align:middle;
+  text-align:center; 
+
+}
+
+/* visual styles */
+/*body{
+    margin:0;
+    font-family:sans-serif;
+    font-size:16px;
+
+  color:#4e4e4e;
+    text-align:center;
+}
+section {
+
+}
+.not-fullscreen {
+    height:80%;
+}
+/*------End Parallax Styles----*/
+
+h1{
+  float:left;
+  color:white;
+}
+
+.left{
+  text-align: left;
+}
+
+.wrapper{
+  position: none;
+}
+
+body, .wrapper, html{
+  height:100%;
+  min-height:100%;
+} 
+
+ul{
+   overflow: hidden;
+  
+}
+
+ul li{
+  
+  float:left;
+  margin: 13px 0px 0px 3px;
+   list-style: none;
+}
+
+ul li:first-child{
+  margin-left: 0px;
+}
+
+
+nav ul a{
+
+   font: 12px/30px 'Fauna One', Georgia, serif;
+   font-weight: 300;
+   letter-spacing: 1px;
+   color: white;
+   text-decoration: none; 
+}
+
+
+.top{
+   overflow: hidden;
+
+}
+
+
+.nav{
+  float: left;
+margin-right: 50px;
+
+}
+
+.logo{
+ font: 28px/68px 'Playfair Display', Georgia, serif;
+  float: left;
+  color:white;
+  margin-left: 35px;
+}
+
+
+.main-1{
+text-align: center;
+font-size: 72px;
+font-family: "faricy-new-web";
+color: black;
+letter-spacing: 1.5px;
+color:white;
+}
+
+
+.main-title {
+font: 18px/30px 'Fauna One', Georgia, serif;
+
+text-align: left;
+color: black;
+
+
+
+  }
+
+h2.head1{
+ font: 54px'Playfair Display', Georgia, serif;
+font-weight: 700;
+margin-bottom: 10%;
+display: block;
+text-align: center;
+margin-bottom:0px;
+margin-top: 225px;
+}
+
+p{
+  font-size: 16px;
+  font-family: "faricy-new-web";
+  font-weight: 400;
+
+}
+
+
+.message-blurb{
+  margin-top: 20px;
+}
+.main-nav{
+  overflow: hidden;
+border: 1px solid black;
+
+background-color: black;
+position: fixed;
+width: 100%;
+z-index:1;
+top:0;
+}
+
+.main-container{
+ background: url('../assets/image1.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+position: absolute;
+display: table;
+height: 100%;
+width: 100%;
+ }
+
+
+.text-overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.box1, .box2, .box3{
+  text-align: center;
+}
+
+
+
+h2.text {
+    text-align: center;
+    color: black;
+   font-family:"adelle-sans"; 
+    font-size: 36px;
+    line-height: 2;
+    padding: 0 10%;
+}
+
+.color-box{
+  float:left;
+}
+
+.main-box{
+  overflow: hidden;
+  width: 900px;
+  margin: 0 auto;
+  color:black;
+  margin-top: 5%;
+}
+
+.title-box{
+    margin: 0 auto;
+    color:black;
+    font-size: 20px;
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font: 20px/30px 'Fauna One', Georgia, serif;
+    letter-spacing: 1px;
+
+}
+
+
+.form-control {
+display: block;
+width: 94%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid black;
+border-radius: 4px;
+ font: 14px 'Fauna One', Georgia, serif;
+}
+
+.form-group{
+  margin-top: 10px;
+  text-align: right;
+}
+
+input#input_message.form-control{
+  height:125px;
+   font: 14px 'Fauna One', Georgia, serif;
+}
+
+.btn{
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 1px solid #0a0a0c;
+  color: #0a0a0c;
+  background-color: white;
+
+}
+
+#Your-Icon{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.location-icon{
+  
+   text-align: center;
+  
+}
+
+span.location-blurb{
+
+   font: 14px 'Fauna One', Georgia, serif;
+   color:black;
+   display: inline-block;
+margin-left: 25px;
+margin-top: 26px;
+position: absolute
+}
+
+span.email-blurb{
+  display: inline-block;
+  font: 14px 'Fauna One', Georgia, serif;
+  color:black;
+  margin-left: 25px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+span.number-blurb{
+display: inline-block;
+font: 14px 'Fauna One', Georgia, serif;
+color:black;
+margin-left: 25px;
+margin-top: 34px;
+position: absolute;
+}
+
+
+p.message{
+  margin-left: 0px;
+  line-height: 1.3;
+  font: 14px 'Fauna One', Georgia, serif;
+  color:black;
+}
+
+.email-icon{
+text-align: center;
+}
+
+.form-control a, placeholder{
+  color:black !important;
+}
+
+.message-form{
+  margin-top: 1%;
+}
+
+.email-icon, .phone-icon{
+  margin-top: 11%;
+}
+
+.location-icon, .email-icon, .phone-icon{
+ text-align: left;
+padding: 5px;
+overflow: hidden;
+}
+
+
+/*img{
+  float:left;
+}*/
+
+p{
+  display: inline-block;
+margin-top: 23px;
+margin-left: 20px;
+font-family: "faricy-new-web";
+letter-spacing: 1px;
+font-size: 18px;
+}
+
+
+a{
+  line-height: 1.5;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color:black;
+}
+
+.icon1{
+  float:none;
+}
+
+
+.title{
+  font: 36px/68px 'Playfair Display', Georgia, serif;
+  letter-spacing: 1px;
+  color:black;
+  margin-top: 10%;
+}
+
+.icons-all{
+  margin-top: -5%;
+}
+
+ .project-title{
+
+ font: 34px 'Playfair Display', Georgia, serif;
+  margin-top: 10%;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.service-title{
+font: 36px 'Playfair Display', Georgia, serif;
+color: black;
+margin-top: 10%;
+margin-bottom: 7%;
+letter-spacing: 1px;
+font-weight: 400;
+
+}
+
+.projects{
+ margin-top: 7%;
+}
+
+.projects2{
+  margin-top: 4%;
+}
+
+
+
+
+button.submit{
+  padding: 10px 25px;
+  background: white;
+  border:1px solid black;
+  margin-right: 2px;
+  font: 14px 'Fauna One', Georgia, serif;
+  font-size: 14px; 
+  margin-top: 16px;
+
+}
+
+
+.frame1{
+  background: url('{{site.url}}assets/01_fade.jpg');  
+}
+
+.frame2{
+    background: url('{{site.url}}assets/03_01.jpg');
+}
+
+.name{
+  margin-top: 10px;
+}
+
+.gray{
+  background-color: gray;
+}
+
+.aboutme-blurb{
+  color:black;
+  font: 16px/24px 'Fauna One', Georgia, serif;
+}
+
+.color1{
+  background: url('{{site.url}}assets/blocks.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.height1{
+  height:55% !important;
+}
+
+.upload{
+  float:left;
+  margin-left: 15px;
+  margin-top:6%;
+ 
+} 
+
+.upload-icon{
+  width:125px !important;
+  height:125px;
+  margin:0px !important;
+  text-align: center;
+
+}
+p.icons4{
+  color:black;
+   font: 14px/20px 'Fauna One', Georgia, serif;
+   margin-left:0px;
+   width:196px;
+   display: inherit;
+}
+
+h2.ready{
+   font: 36px 'Playfair Display', Georgia, serif;
+   margin-bottom: 4%;
+   color:black;
+   margin-top: 10%;
+}
+
+.send{
+   font: 22px 'Fauna One', Georgia, serif;
+}
+
+.blue{
+background-color: blue;
+
+}
+
+.landscape{
+  background: url('{{site.url}}assets/landscape_fade.jpg');
+}
+
+/*header{
+  background: url('{{site.url}}assets/01_fade.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: absolute;
+} */
+
+.service-image{
+  background: url('{{site.url}}assets/03_01.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width:100%;
+  position: relative;
+}
+
+.btn {
+background-color: rgba(79, 79, 79, 0.83);
+border-radius: 10px;
+border: none;
+color: white;
+margin-top: 15px;
+font-size: 16px;
+padding: 5px;
+font: 20px 'Playfair Display', Georgia, serif;
+height: 50px;
+background-color: rgba(0, 0, 0, 0.81);
+margin-top: 40px;
+}  
+
+
+.btn:hover {
+
+}
+
+.about-box{
+  margin-top: 5%;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    black;
+}
+
+.head2{
+margin-top:50px;
+/*background-color: white;*/
+opacity: 0.8;
+height: 100px;
+/*padding: 18px 20px 2px 20px;*/
+border-radius: 10px;
+text-align: center;
+overflow: hidden;
+font: 16px/22px 'Fauna One', Georgia, serif; 
+
+}
+
+.here{
+  margin: 0 auto;
+  width: 860px;
+}
+
+
+ span.paper-head{
+    font: 54px 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 36px;
+   }
+
+
+button{
+  height: 35px;
+border: 1px solid black;
+height: 35px;
+border: 2px solid black;
+border-radius: 4px;
+margin-top: 5px;
+}
+
+.slide1{
+  background: url('{{site.url}}assets/03_01.jpg');
+  background-size: cover;
+background-position: center;
+}
+
+@media screen and (max-width:989px){
+
+
+   .main-title{
+      margin-top: 35%;
+      margin-left: 25px !important;  
+   }
+
+   h2.head1{
+    font: 48px/68px 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    margin-bottom: 0;
+   }
+
+   .head2{
+    margin-top: 25px;
+   }
+
+
+  
+
+   nav.nav{
+    margin-left: 25px !important;
+   }
+
+   .main-box{
+    margin-top: 0%;
+   }
+
+   .service-title{
+    margin-top: 13%;
+   }
+
+   .box1, .box2, .box3{
+    margin-top: 5%;
+   }
+
+   .email-icon, .phone-icon{
+    margin-top: 0px;
+   }
+
+   .email-icon, .phone-icon, .location-icon{
+    text-align: center; 
+   } 
+   
+
+   .icons-all{
+    margin-top: 5%;
+   }
+
+   .title{
+    margin-top: 100px;
+   }
+
+   p.icons4{
+  width: 60%;
+  margin: 3% 20%;
+}
+
+.upload{
+  margin-bottom: 5%;
+}
+
+}
+
+@media screen and (max-width:767px){
+
+h2.head1{
+    font: 28px/68px 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    margin-bottom: 0;
+   }
+
+.head2{
+  font-size: 16px;
+}   
+
+.main-title{
+width: 95%;
+margin-left: 0px !important;
+text-align: center;
+margin-top: 200px;
+}
+
+
+.title{
+  margin-top: 200px;
+}
+
+ul li{
+  float:none;
+  margin: 0px;
+  text-align: left;
+}
+
+.service-title, h2.ready{
+  margin-top: 200px;
+}
+
+.nav.nav{
+  margin-left: 0px !important;
+}
+
+ul li{
+  text-align: center;
+}
+
+.location-icon, .email-icon, .phone-icon{
+  width:75%;
+  margin: 0 12.5%;
+  text-align: left;
+}
+
+ .message-form, .message-blurb{
+  width: 95% !important;
+  margin: 0 2.5% !important;
+}
+
+
+p.icons4{
+ width: 60%;
+margin: 3% 20%;
+}
+
+.upload{
+  margin-bottom: 5%;
+}
+
+
+
+
+ } 

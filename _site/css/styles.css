@@ -1,0 +1,41 @@
+
+ul{
+   overflow: hidden;
+}
+
+
+ul li{
+	
+	float:left;
+	margin: 50px 0px 0px 37px;
+	 list-style: none;
+}
+
+nav ul a{
+   font-family:"adelle-sans"; 
+   font-size: 22px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   color: black;
+   text-decoration: none;
+  
+}
+
+
+.top{
+   overflow: hidden;
+width: 1100px;
+max-width: 1100px;
+margin: 25px auto 0px;
+}
+
+
+
+@media screen and (max-width:767px){
+   ul li{
+      float:none;
+      margin: 0 auto;
+   }
+
+
+}

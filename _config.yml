@@ -1,0 +1,54 @@
+
+
+
+
+title: my Github Site
+
+url: "http://jmstan.github.io/PrintingSite5/"
+
+baseurl: "PrintingSite2"
+permalink: pretty
+
+
+prose:
+  siteurl: "http://jmstan.github.io/PrintingSite5" 
+  media: 'media'
+  rooturl: '_posts'
+  ignore: 
+    - index.html
+    - _includes.html
+    - _layouts.html
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
